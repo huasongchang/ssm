@@ -126,7 +126,7 @@ public class CustomerController {
     @RequestMapping("/findByPage")
     public String findByPage(Customer customer,
                              @RequestParam(value = "pageCode", required = false, defaultValue = "1") int pageCode,
-                             @RequestParam(value = "pageSize", required = false, defaultValue = "2") int pageSize,
+                             @RequestParam(value = "pageSize", required = false, defaultValue = "3") int pageSize,
                              Model model) {
         // 回显数据
         model.addAttribute("page", customerService.findByPage(customer, pageCode, pageSize));
