@@ -15,11 +15,11 @@
 <h2 class="text-center">SSM框架整合（分页查询）案例</h2>
 <hr/>
 <form action="<%=basePath%>/user/login.do" method="post" class="form-inline text-center">
-    <label>username:</label>
+    <label>用户名:</label>
     <input type="text" class="form-control" name="username"/>
     <br/>
     <br/>
-    <label>password:</label>
+    <label>密  码:</label>
     <input type="password" class="form-control" name="password"/>
     <br/>
     <br/>

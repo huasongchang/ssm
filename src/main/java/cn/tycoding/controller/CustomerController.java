@@ -1,7 +1,9 @@
 package cn.tycoding.controller;
 
 import cn.tycoding.pojo.Customer;
+import cn.tycoding.pojo.User;
 import cn.tycoding.service.CustomerService;
+import cn.tycoding.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,6 +28,8 @@ public class CustomerController {
      */
     @Autowired
     private CustomerService customerService;
+
+    private UserService userService;
 
     /**
      * 跳转到添加客户功能页面
@@ -133,4 +137,12 @@ public class CustomerController {
         return "page/list";
     }
 
+/*    public String findByPage(User user,
+                                  @RequestParam(value = "pageCode", required = false, defaultValue = "1") int pageCode,
+                                  @RequestParam(value = "pageSize", required = false, defaultValue = "3") int pageSize,
+                                  Model model) {
+        // 回显数据
+        model.addAttribute("page", userService.findByPage(user, pageCode, pageSize));
+        return "page/list";
+    }*/
 }

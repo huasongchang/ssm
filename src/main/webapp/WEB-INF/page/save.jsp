@@ -15,6 +15,10 @@
 <link rel="stylesheet" href="<%=basePath%>/lib/bootstrap.min.css"/>
 <head>
     <title>添加客户功能页面</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <!-- 导航栏 -->
@@ -34,6 +38,23 @@
         </div>
     </nav>
 </div>
+<!--div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+            data-toggle="dropdown">
+        SSM整合
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="<%=basePath%>/customer/toSavePage.do">添加信息功能</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="<%=basePath%>/customer/toListPage.do">分页查询功能</a>
+        </li>
+    </ul>
+</div-->
+
 <div class="container">
     <h1 class="text-center">客户信息添加页面</h1>
     <hr/>
