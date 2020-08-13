@@ -95,7 +95,7 @@
                 <th style="text-align: center;">客户电话</th>
                 <th style="text-align: center;">客户地址</th>
                 <th style="text-align: center;">客户备注</th>
-                <th style="text-align: center;">操作</th>
+                <th style="text-align: center;">操 作</th>
             </tr>
             </thead>
             <tbody>
