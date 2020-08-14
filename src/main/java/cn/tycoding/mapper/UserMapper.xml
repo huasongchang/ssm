@@ -22,7 +22,6 @@
         insert into
         tb_user(
           username,
-          password,
           account,
           department,
           telephone,
@@ -31,7 +30,6 @@
           status)
         values(
           #{username},
-          #{password},
           #{account},
           #{department},
           #{telephone},
@@ -56,7 +54,6 @@
         update tb_user set
             id = #{id},
             username = #{username},
-            password = #{password},
             account = #{account},
             department = #{department},
             telephone = #{telephone},
@@ -69,18 +66,18 @@
     <!-- 分页-条件查询 -->
     <select id="findByPage" parameterType="cn.tycoding.pojo.User" resultMap="BaseResultMap">
         SELECT * FROM tb_user WHERE 1=1
-        <if test="name != null">
-            AND username LIKE CONCAT('%', #{name}, '%')
+        <if test="username != null">
+            AND username LIKE CONCAT('%', #{username}, '%')
         </if>
-        <if test="telephone != null">
-            AND telephone LIKE CONCAT('%', #{telephone}, '%')
+        <if test="department != null">
+            AND department LIKE CONCAT('%', #{department}, '%')
         </if>
     </select>
 
 
     <!-- 用户登录的方法 -->
     <select id="login" parameterType="cn.tycoding.pojo.User" resultType="User">
-        select * from tb_user where username = #{username}
+        select * from tb_user where account = #{account}
     </select>
 
 </mapper>
